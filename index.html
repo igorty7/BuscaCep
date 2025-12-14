@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Endereços</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="address-wrapper">
+        <header class="address-header">
+            <h2>Endereço</h2>
+        </header>
+
+        <form class="address-form" id="form-cep">
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label for="cep">CEP</label>
+                    <input name="cep" type="text" id="cep" placeholder="00000-000" maxlength="9" />
+                    <span class="error-msg" id="cep-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="uf">Estado</label>
+                    <input name="uf" type="text" id="uf" placeholder="UF" readonly />
+                </div>
+
+                <div class="input-group">
+                    <label for="cidade">Cidade</label>
+                    <input name="cidade" type="text" id="cidade" placeholder="Cidade" readonly />
+                </div>
+
+                <div class="input-group">
+                    <label for="bairro">Bairro</label>
+                    <input name="bairro" type="text" id="bairro" placeholder="Bairro" readonly />
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="rua">Logradouro</label>
+                    <input name="rua" type="text" id="rua" placeholder="Rua" readonly />
+                </div>
+
+                <div class="input-group">
+                    <label for="numero">Número</label>
+                    <input name="numero" type="text" id="numero" placeholder="Nº" />
+                </div>
+
+                <div class="input-group">
+                    <label for="complemento">Complemento</label>
+                    <input name="complemento" type="text" id="complemento" placeholder="Ex: Apto 101" />
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-submit">Buscar / Confirmar</button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
